@@ -6,7 +6,7 @@ public class Main {
         Thread[] threads = new Thread[10];
 
         for(int i = 0; i < 10; i++){
-            long block = (long) Math.pow(3, 3);
+            long block = (long) Math.pow(10, 8);
             PrimeRun p = new PrimeRun(block, i + 1, counter);
             threads[i] = new Thread(p);
             threads[i].start();
