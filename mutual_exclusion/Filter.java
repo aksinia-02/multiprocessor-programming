@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 //The Filter Lock algorithm satisfies mutual exclusion
 //is starvation free
+//doesn't fair (no first come, first served)
 public class Filter implements Lock{
 
     int[] level;
